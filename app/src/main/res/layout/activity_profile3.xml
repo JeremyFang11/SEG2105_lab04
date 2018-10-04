@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="35dp"
+            android:gravity="center_horizontal"
+            android:text="Select  a new Avatar"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:columnCount="3"
+            app:rowCount="2"
+            tools:targetApi="22">
+
+            <ImageView
+                android:id="@+id/icon00"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:onClick="setTeamIcon"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/square" />
+
+            <ImageView
+                android:id="@+id/icon01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:onClick="setTeamIcon"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/chrome" />
+
+            <ImageView
+                android:id="@+id/icon02"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:onClick="setTeamIcon"
+                app:layout_column="2"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/obama" />
+
+            <ImageView
+                android:id="@+id/icon03"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:onClick="setTeamIcon"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/kon" />
+
+            <ImageView
+                android:id="@+id/icon04"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:onClick="setTeamIcon"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/tsm" />
+
+            <ImageView
+                android:id="@+id/icon05"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:onClick="setTeamIcon"
+                app:layout_column="2"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/sad" />
+        </android.support.v7.widget.GridLayout>
+
+        <Button
+            android:id="@+id/loadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="20dp"
+            android:text="Load image from Phone" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
